@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Augmented Reality Example</title>
+  <style>
+    body {
+				overflow: hidden;
+				padding: 0px;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				color: #333;
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			a {
+				color: #9b9b9b;
+				font-weight: 700;
+				text-decoration: none;
+			}
+
+			.div-block {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+
+			.rich-text-block {
+				max-width: 512px;
+				color: #9b9b9b;
+				font-size: 14px;
+				text-align: left;
+			}
+		</style>
+</head>
+
+<body>
+  <div class="div-block">
+    <img src="./images/stargate-marker.png" width="512" alt="" />
+    <div class="rich-text-block w-richtext">
+      <p>
+        <strong>
+          Print this page, then On your phone with it sideways use
+          the qr code above
+        </strong>
+        to be taken to
+        <a href="/stargate">
+          /stargate
+        </a>
+        . Make sure you allow the browser to access your camera to
+        see something when pointing the camera at the Hiro marker.
+      </p>
+    </div>
+  </div>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
+
+</html>
